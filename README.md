@@ -49,7 +49,7 @@ time -- shows the time from when the ball is first launched and resets every tim
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- Stores the data for the bricks 
 
 2D Array:
 - YOUR ANSWER HERE
