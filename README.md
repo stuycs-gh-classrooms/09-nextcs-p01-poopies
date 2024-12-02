@@ -17,17 +17,25 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: Breakout
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+Slider -- to control using the keys and/or the mouse.
+Ball -- bounces off sliders and collides with bricks to make them dissappear.
+Bricks -- create bricks using arrays/class that sets them up in order and lave space margins between each brick
+collistionChecker -- checks if an object has touched another object 
+scoreBoard -- shows the scores based on how many balls has interacted with the bricks, updated everytime it collides
+livesBoard -- shows amount of lives avaliable and decreases the lives when ball has exceeded a certain area.
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+Colors -- to differ between different bricks as well as the slider and ball.
+End scene -- shows an end frame when the ball has won the game (when there are no bricks on the screen)
+Speed -- changes the speed for a more dynamic and engaging playtime 
+time -- shows the time from when the ball is first launched and resets every time
 
 ### Array Usage
 How will you be using arrays in this project?
@@ -43,11 +51,11 @@ How will you be using arrays in this project?
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- When 'r' is press, reset game 
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement:The slider follows mouses movement.
+- Mouse pressed: The slider stops or starts moving.
 
 
 ### Classes
