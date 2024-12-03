@@ -68,7 +68,7 @@ Keyboard Commands:
 Mouse Control:
 - Mouse movement: The mouse movement will control the horizontal position of the paddle, allowing the player to move it left or right across the screen.
 
-- Mouse pressed: The mouse click will be used to start or restart the game by launching the ball from its starting position.
+- Mouse pressed: The mouse click will be used to start the game by launching the ball from its starting position.
 
 
 ### Classes
