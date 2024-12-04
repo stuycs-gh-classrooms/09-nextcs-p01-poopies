@@ -85,12 +85,12 @@ CLASS BALL
   - is_moving: A boolean indicating if the ball is currently moving.
 
 - METHODS
-  - ballie(self, x, y, radius, color): Initializes the ball's position, size, and color.
-  - move(self): Updates the ball’s position based on its velocity.
-  - check_collision(self, slider, grid): Checks for collisions with the paddle, walls, and bricks.
-  - bounce_horizontal(self): Reverses the horizontal direction of the ball.
-  - bounce_vertical(self): Reverses the vertical direction of the ball.
-  - reset(self): Resets the ball’s position and stops movement after a life is lost.
+  - ballie(x, y, radius, color): Initializes the ball's position, size, and color.
+  - move(): Updates the ball’s position based on its velocity.
+  - check_collision(slider, grid): Checks for collisions with the paddle, walls, and bricks.
+  - bounce_horizontal(): Reverses the horizontal direction of the ball.
+  - bounce_vertical(): Reverses the vertical direction of the ball.
+  - reset(): Resets the ball’s position and stops movement after a life is lost.
 
 CLASS GRID
 - Instance variables:
@@ -101,8 +101,8 @@ CLASS GRID
   - brick_height: The height of each brick.
   - color: The color of the bricks (can vary for different rows or difficulty).
 - METHODS
-  - griddle(self, rows, cols, brick_width, brick_height): Initializes the grid with a specified number of rows and columns.
-  - draw(self): Renders the bricks on the screen.
+  - griddle( rows, cols, brick_width, brick_height): Initializes the grid with a specified number of rows and columns.
+  - draw(): Renders the bricks on the screen.
   - check_collision(self, ball): Checks if the ball has collided with a brick, and if so, removes the brick and updates the score.
   - is_empty(self): Returns True if all bricks have been destroyed, signaling the end of the level.
 
@@ -117,7 +117,7 @@ CLASS SLIDER
   - window_width: The width of the game window (used to limit paddle movement).
 - METHODS
   - paddle(self, x, y, width, height, color, window_width): Initializes the paddle’s position, size, and color.
-  - move_left(self): Moves the paddle left, ensuring it doesn’t go out of bounds.
-  - move_right(self): Moves the paddle right, ensuring it doesn’t go out of bounds.
-  - update_position(self, mouse_x): Updates the paddle's position based on mouse movement.
-  - check_collision(self, ball): Checks if the ball has collided with the paddle and adjusts the ball’s velocity accordingly.
+  - move_left() Moves the paddle left, ensuring it doesn’t go out of bounds.
+  - move_right(): Moves the paddle right, ensuring it doesn’t go out of bounds.
+  - update_position(mouse_x): Updates the paddle's position based on mouse movement.
+  - check_collision(ball): Checks if the ball has collided with the paddle and adjusts the ball’s velocity accordingly.
