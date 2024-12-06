@@ -37,11 +37,20 @@ class Ball {
       xSpeed *= -1;
     }
 
+
     // Bounce off the top wall
     if (y - radius <= 0) {
       ySpeed *= -1;
     }
   }
+  
+  void checkCollisionWithPaddle(Slider paddle) {
+    if (paddle.checkCollision(this)) {
+      bounceVertical();  // Reverse vertical direction
+      y = paddle.y - radius;  // Adjust ball position to avoid sticking
+    }
+}
+
 
   // Method to bounce vertically (for collision with paddle or bricks)
   void bounceVertical() {
@@ -56,7 +65,3 @@ class Ball {
     ySpeed = -5;
   }
 }
-
-class griddle {
-  
-  //instance variables 
