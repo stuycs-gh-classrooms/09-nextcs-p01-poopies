@@ -9,7 +9,7 @@ void setup() {
 
 void draw() {
   background(0);
-  paddle.updatePosition(mouseX);
+  paddle.updatePosition();
   paddle.display();
 
   ball.move();

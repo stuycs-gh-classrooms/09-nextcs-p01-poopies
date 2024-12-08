@@ -23,11 +23,9 @@ class Slider {
   }
 
   // Updates the paddle's position based on mouse movement
-  void updatePosition(float mouseX) {
-    x = mouseX - width / 2;
-    // Ensure the paddle stays within the screen boundaries
-    x = constrain(x, 0, width - this.width);
-  }
+  void updatePosition() {
+  this.x = mouseX;
+} 
 
   // Checks if the ball has collided with the paddle
   boolean checkCollision(Ball ball) {
