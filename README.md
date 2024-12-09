@@ -34,10 +34,11 @@ collistionChecker -- checks if an object has touched another object
 
 scoreBoard -- shows the scores based on how many balls has interacted with the bricks, updated everytime it collides
 
-livesBoard -- shows amount of lives avaliable and decreases the lives when ball has exceeded a certain area.
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
+
+livesBoard -- shows amount of lives avaliable and decreases the lives when ball has exceeded a certain area.
 
 Colors -- to differ between different bricks as well as the slider and ball.
 
