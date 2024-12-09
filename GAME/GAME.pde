@@ -2,6 +2,7 @@
 Paddle paddle;
 Ball ball;
 Blocks blocks;
+int score = 0;
 
 void setup() {
   size(800, 600); // Window size
@@ -26,6 +27,8 @@ void draw() {
 
   blocks.display();
   blocks.checkCollisionWithBall(ball);
+  
+  displayScore();
 
   // Check if the ball goes out of bounds
   if (ball.y - ball.radius > height) {

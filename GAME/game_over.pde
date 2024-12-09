@@ -1,6 +1,3 @@
-
-
-
 // Game states
 void gameOver() {
   fill(255);

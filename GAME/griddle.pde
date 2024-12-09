@@ -60,6 +60,7 @@ class Blocks {
       for (int c = 0; c < cols; c++) {
         if (blockGrid[r][c].checkCollision(ball)) {
           ball.ySpeed *= -1; // Reverse direction
+          score += 10;
         }
       }
     }
